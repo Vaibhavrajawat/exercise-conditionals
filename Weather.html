@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checking Weather</title>
+  </head>
+  <body>
+    <button
+      onclick="
+        myFunction();
+    "
+    >
+      Start
+    </button>
+  </body>
+  <script>
+    function myFunction() {
+      let season = "summer";
+      let response;
+
+      let userQuery = prompt("What season it is?");
+
+      if (userQuery && userQuery.toLowerCase() === "summer") {
+        response = "Weather is beautiful";
+        alert(response);
+      } else if (userQuery && userQuery.toLowerCase() === "winter") {
+        response = "Winter is coming, IYKYK ;)";
+        alert(response);
+      } else {
+        response = "We don't know what season it is.";
+        alert(response);
+      }
+    }
+  </script>
+</html>
