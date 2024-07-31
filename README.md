@@ -4,4 +4,4 @@ I am following Odin Project and this is one of the exercises that needs to be do
 
 I am using my own logics to solve the issues. I am not following the hints.
 
-I will solve the exercise with the hint as well !!
+I will solve the exercise with the hints as well !!
