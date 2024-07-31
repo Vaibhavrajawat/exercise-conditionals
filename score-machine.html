@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checking Weather</title>
+  </head>
+  <body>
+    <button
+      onclick="
+        myFunction();
+    "
+    >
+      Start
+    </button>
+  </body>
+  <script>
+    function myFunction() {
+      let machineActive = Math.random();
+      let score = "";
+      let response;
+
+      if (machineActive >= 0 && machineActive <= 1 / 2) {
+        response = alert("Machine is active");
+        if ((response = "Machine is active")) {
+          score = prompt("What score did you get ?");
+          if (score < 0 || score > 100) {
+            alert("This is not possible, an error has occurred.");
+          } else if (score >= 0 && score <= 19) {
+            alert("That was a terrible score — total fail!");
+          } else if (score >= 20 && score <= 39) {
+            alert(
+              "You know some things, but it's a pretty bad score. Needs improvement."
+            );
+          } else if (score >= 40 && score <= 69) {
+            alert("You did a passable job, not bad!");
+          } else if (score >= 70 && score <= 89) {
+            alert("That's a great score, you really know your stuff.");
+          } else if (score >= 90 && score <= 100) {
+            alert("What an amazing score! Did you cheat? Are you for real?");
+          }
+        }
+      } else {
+        response = alert("Machine is Not active, Try again");
+      }
+    }
+  </script>
+</html>
